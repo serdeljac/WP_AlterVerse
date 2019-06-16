@@ -845,7 +845,8 @@ if ( ! function_exists( 'av_post_content_single' ) ) {
     </div>
     <div class="av_single__description">
       <p>
-        <?php echo esc_attr( get_post_meta( get_the_ID(), 'ev_info__description', true ));?>
+        <?php //echo esc_attr( get_post_meta( get_the_ID(), 'ev_info__description', true ));?>
+        <?php the_content(); ?>
       </p>
     </div>
 		<?php
